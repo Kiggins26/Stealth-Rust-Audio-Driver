@@ -1,0 +1,13 @@
+[package]
+name = "voice-cloak"
+version = "0.1.0"
+edition = "2024"
+description = "Mixes adversarial ASR-perturbation audio into a live microphone stream via cpal"
+
+[dependencies]
+# cpal 0.19 (pinned commit of RustAudio/cpal)
+cpal = { git = "https://github.com/RustAudio/cpal", rev = "4bedd4e98e9e58693a9d23505b2a4de9b726c321" }
+hound = "3.5"
+ringbuf = "0.4"
+clap = { version = "4.6", features = ["derive"] }
+anyhow = "1.0"
